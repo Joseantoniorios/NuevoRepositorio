@@ -1,0 +1,248 @@
+/***  hoja de estilo de The World of Cats ***/
+
+
+
+@font-face {
+    font-family: imagine;
+    src: url("../fuentes/ShareTech-Regular.ttf");}
+
+@font-face {
+    font-family: writing;
+    src: url("../fuentes/QuattrocentoSans-Regular.ttf");}
+
+
+html {scroll-behavior: smooth;}  
+
+
+body {background-color:rgb(117, 35, 35);
+      margin:0;
+      padding:0;}
+
+
+#container {width:90%;
+            margin:auto;}
+
+
+h1 {letter-spacing:0.2em;}
+
+
+nav {position:sticky;
+    top:0;           
+    z-index:99;     
+    opacity:0.7;}   
+
+
+.summitsurf {
+    overflow: hidden;
+    background-color: rgb(96, 165, 135);
+    font-family:imagine;
+    letter-spacing: 0.2em;}
+  
+
+  .summitsurf a {
+    float: left;
+    display: block;
+    color: #0e0b0b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;}
+  
+
+  .summitsurf a:hover {
+    background-color: #c7c3ae;
+    color: rgb(0, 0, 0);}
+  
+
+  .summitsurf a.active {
+    background-color: #5bce94;
+    color: white;}
+  
+
+  .summitsurf .icon {
+    display: none;}
+ 
+
+  @media screen and (max-width: 600px) {
+    .summitsurf a:not(:first-child) {display: none;}
+    .summitsurf a.icon {
+      float: right;
+      display: block;}
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .summitsurf.responsive {position: relative;}
+    .summitsurf.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;}
+    .summitsurf.responsive a {
+      float: none;
+      display: block;
+      text-align: left;}
+  }
+
+
+#hero {background-image: url("../imagenes/catsfp.jpg");
+       background-size:cover; 
+       background-position:66%;
+       height:100vh;
+       position:relative;}
+
+
+#hero h1 {position: absolute;
+          top:20px;
+          left: 20px;
+          font-family:imagine;
+          font-size:2.7em;
+          letter-spacing:0.2em;}
+
+
+#calltoaction {position:absolute;
+               bottom:22px; 
+               right:40px;
+               padding:5px;
+               background-color: #08420b;
+               border-radius: 10px;
+               font-family: imagine;
+               font-size: 2.0em;
+               text-transform: uppercase;}
+
+
+#calltoaction:hover {background-color: #3f8c4a;
+                     cursor:pointer;}
+
+
+.fa-arrow-up {position:fixed;
+              bottom:20px;
+              right:20px;
+              color:rgb(75, 195, 208);
+              border:2px solid rgb(75, 195, 208);
+              padding:3px;
+              border-radius:50%;}
+
+
+#origins {font-family:writing;  
+  color:white;      
+  padding:8%;
+  text-align:justify;
+  border-bottom: 5px solid #1b5b80;}
+
+
+#origins h1 {font-family:imagine;
+  text-align:center;
+  font-size:2.2em;}
+
+
+#egypt {width:50%;  
+  float:left; 
+  margin:15px;}
+
+
+#origins p:first-letter {font-size:1.8em;  }
+
+
+#walking {font-family: writing;
+          color:white;
+          border-bottom: 5px solid #1b5b87;}
+
+
+#walking h1 {font-family:imagine;
+                  text-align:center;
+                  font-size:2em;}
+
+
+#walking p:first-letter {font-size:1.8em;}
+
+
+.half {box-sizing:border-box;  
+        width:50%;
+        float:left;
+        padding:2%;}
+
+
+.resetear {clear:both;}
+
+
+#izqda {padding:30px 2%;}
+
+
+#catwalking {width:75%; 
+       display:block;  
+       margin:auto;} 
+
+
+#gallery h1 {font-family: imagine;
+             text-align:center;
+             font-size: 2em;
+             color:white;
+             padding:30px 0;}
+
+
+.quart {width:23%;
+         margin:1%;
+         padding:2%;
+         float:left;
+         box-sizing:border-box;
+         border:5px solid #1b5b87;}
+
+
+.quart img {width:100%;
+             opacity:0.5;}
+
+
+.quart img:hover {opacity:1;}
+
+
+.quart h2 {font-family: imagine;
+            color:white;
+            text-align:center;}
+ 
+
+#information {padding:30px 10%;}
+
+
+.opening {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-family: imagine;}
+
+
+.active, .opening:hover {
+  background-color: #b5b3ab;}
+
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: black;
+  font-family:writing;
+  overflow: hidden;}
+
+
+h1, p {color:white}
+h1 {font-family:imagine;
+    font-size:2em;
+    text-align:center;}
+
+
+@media only screen and (max-width:800px){
+      #egypt, .half  {width:100%;}
+      #catwalking {width:50%} 
+      .quart {width:46%;
+               margin:2%}
+}
+
+
+@media only screen and (max-width:500px){
+    .quart {width:90%;
+             margin:5%;}}

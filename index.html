@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World of Cats</title>
+    <link rel="shortcut icon" href="./imagenes/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./estilos/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./javascripts/javascript.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <div class="summitsurf" id="mySummitsurf">
+                <a href="#hero" class="active">Home</a>
+                <a href="#origins">Origins</a>
+                <a href="#walking">The Perfect Way of Walking</a>
+                <a href="#gallery">Breed Gallery</a>
+                <a href="#information">More Information</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>  
+        </nav>
+      
+
+        <section id="hero">
+           <h1>The World of Cats</h1>
+           <a href="#origins"><p id="calltoaction">Get to know them!</p></a>
+         <a href="#container"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+        </section>
+
+        
+        <section id="origins">
+           <h1>ORIGINS<br><br></h1>
+           <img id="egypt" src="./imagenes/egypt.jpg" alt="jeroglífico egipto">
+           <p>The first records of cats in history are in Egypt.</p>
+           <p>There is a legend that states that these animals were sent by the gods to protect humanity from pests, as they would hunt rodents, thus preventing the spread of diseases.</p>
+           <p>So revered were they that there were laws in Ancient Egypt that punished anyone who harmed a cat or removed it from Egyptian territory.</p>
+          </section>  
+
+        
+        <section id="walking">
+            <div class="half" id="izqda">
+              <img id="catwalking" src="./imagenes/catwalking.png" alt="imagen gato caminando">
+            </div>
+            <div class="half" id="dcha">
+              <h1>THE PERFECT WAY OF WALKING</h1>
+              <p>Cats step on their hind legs where their forelegs left their mark, a quality that earns them the nickname "perfect walkers."</p>
+              <p>A strategy in which many muscles of your body are involved, and that allows you to move forward with the least effort and as stealth as possible.</p>
+            </div>
+            <div class="resetear"></div>
+        </section>
+
+
+        <section id="gallery">
+            <h1>BREED GALLERY</h1>
+           <div class="quart">
+               <img src="./imagenes/sphynx.jpg" alt="sphynx breed">
+               <h2>Sphynx</h2>
+           </div>
+           <div class="quart">
+               <img src="./imagenes/ragdoll.jpg" alt="ragdoll breed">
+               <h2>Ragdoll</h2>
+           </div>
+           <div class="quart">
+               <img src="./imagenes/siamese.jpg" alt="siamese breed">
+               <h2>Siamese</h2>
+           </div>
+           <div class="quart">
+               <img src="./imagenes/bengal.jpg" alt="bengal breed">
+               <h2>Bengal</h2>
+           </div>
+           <div class="resetear"></div>
+        </section>
+       
+        
+        <section id="information">
+            <h1>MORE INFORMATION<br></h1>
+            <button class="opening">Sponsor a cat this Christmas.</button>
+            <div class="panel">
+               <p>Los Robles Street, number 23. Marbella (Málaga).</p>
+               <p>roblesguarida@gmail.com</p>
+               <p>+34 689 34 98 02</p>
+             </div>
+             
+             <button class="opening">Donations for the care of cats.</button>
+             <div class="panel">
+               <p>ES91 2100 0478 9502 0005 1332</p>
+             </div>
+        </section>
+
+        
+        <footer id=footer class="section">
+            <div id=posts>
+              <div class="pillar">
+                <h2><br><br>HOW TO CONTACT ME</h2>
+                <a href="https://github.com/Joseantoniorios"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                <br><br><br><br>
+              </div>
+            </div>
+        </footer>
+    </div>
+  
+    
+    
+
+    <script>
+        var ope = document.getElementsByClassName("opening");
+        var i;
+        
+        for (i = 0; i < ope.length; i++) {
+          ope[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("mySummitsurf");
+              if (x.className === "summitsurf") {
+                x.className += " responsive";
+              } else {
+                x.className = "summitsurf";
+              }
+            }
+        </script>
+</body>
+</html>
